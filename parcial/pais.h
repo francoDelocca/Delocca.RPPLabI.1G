@@ -50,33 +50,50 @@ int pais_setId(ePais* this, int id);
  */
 
 int pais_setNombre(ePais* this, char* nombre);
-/** \brief
+/** \brief recibe por parametro el valor del nombre que le asignara al pais recibido
  *
- * \param
- * \param
- * \return
+ * \param ePais
+ * \param char nombre
+ * \return 1 o -1
  *
  */
 
 int pais_setRecuperados(ePais* this, int recuperados);
-/** \brief
+/** \brief recibe por parametro el valor de recuperados que le asignara al pais recibido
  *
- * \param
- * \param
- * \return
+ * \param ePais* puntero a la ePais a modificar
+ * \param int recuperados que se le asignara al ePais recibido
+ * \return 1 si pudo asignarla, -1 si no
  *
  */
 
 int pais_setInfectados(ePais* this, int infectados);
-/** \brief
+/** \brief recibe por parametro el valor de infectados que le asignara al pais recibido
  *
- * \param
- * \param
- * \return
+ * \param ePais* puntero a la ePais a modificar
+ * \param int infectados que se le asignara al ePais recibido
+ * \return 1 si pudo asignarla, -1 si no
  *
  */
 
  int pais_setMuertos(ePais* this, int muertos);
+/** \brief recibe por parametro el valor de muertos que le asignara al pais recibido
+ *
+ * \param ePais* puntero a la ePais a modificar
+ * \param int muertos que se le asignara al ePais recibido
+ * \return 1 si pudo asignarla, -1 si no
+ *
+ */
+
+ /** \brief
+  *
+  * \param
+  * \param
+  * \return
+  *
+  */
+ int pais_getId(ePais* this, int* id);
+
 /** \brief
  *
  * \param
@@ -84,6 +101,7 @@ int pais_setInfectados(ePais* this, int infectados);
  * \return
  *
  */
+ int pais_getNombre(ePais* this, char* nombre);
 
  int pais_getRecuperados(ePais* this, int* recuperados);
  /** \brief
@@ -114,7 +132,7 @@ int pais_getInfectados(ePais* this, int* infectados);
 
 
 void borrarPais(ePais* this );
-/** \brief
+/** \brief borra el pais que se le pasa
  *
  * \param
  * \param
@@ -123,7 +141,7 @@ void borrarPais(ePais* this );
  */
 
  int mostrarPais(ePais* this);
-/** \brief
+/** \brief muestra el pais que se paso como parametro
  *
  * \param
  * \param
@@ -132,7 +150,7 @@ void borrarPais(ePais* this );
  */
 
 void* cambiarEstadisticas(void* this);
-/** \brief
+/** \brief genera numeros random y los asigna al pais
  *
  * \param
  * \param
@@ -141,7 +159,7 @@ void* cambiarEstadisticas(void* this);
  */
 
 void filtrarPorPaisExitoso(LinkedList* this);
-/** \brief
+/** \brief filtra por pais exitoso
 *
 * \param
 * \param
@@ -150,7 +168,7 @@ void filtrarPorPaisExitoso(LinkedList* this);
 */
 
 int paisExitoso(void* this);
-/** \brief
+/** \brief se fija si el pais tiene menos de 5000 muertos y lo agrega al orden
 *
 * \param
 * \param
@@ -159,7 +177,7 @@ int paisExitoso(void* this);
 */
 
 void filtrarPorPaisHorno(LinkedList* this);
-/** \brief
+/** \brief filtra por pais al horno
 *
 * \param
 * \param
@@ -168,7 +186,7 @@ void filtrarPorPaisHorno(LinkedList* this);
 */
 
 int paisHorno(void* this);
-/** \brief
+/** \brief se fija si el pais esta al horno (cuando la cantidad de infectados triplica la cantidad de recuperados)
 *
 * \param
 * \param
@@ -177,7 +195,7 @@ int paisHorno(void* this);
 */
 
 int compararPaisesPorInfectados(void* paisA,void* paisB);
-/** \brief
+/** \brief compara los infectados de un pais con los del otro
  *
  * \param
  * \param
@@ -186,9 +204,9 @@ int compararPaisesPorInfectados(void* paisA,void* paisB);
  */
 
  LinkedList* compararPaisesPorMuertos(LinkedList* this);
-/** \brief
+/** \brief ve la lista que se le pasa, genera una nueva lista con los datos ya comparados y la devuelve
  *
- * \param
+ * \param LinkedList this
  * \param
  * \return
  *
