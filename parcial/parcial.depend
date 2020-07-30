@@ -1,0 +1,65 @@
+# depslib dependency file v1.0
+1596063824 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\informes.c
+	<stdio.h>
+	<stdlib.h>
+	"Informes.h"
+
+1596063819 c:\users\franc\desktop\parcialreculabopandemia\parcial\informes.h
+
+1596063716 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\linkedlist.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"LinkedList.h"
+	"pais.h"
+
+1596063622 c:\users\franc\desktop\parcialreculabopandemia\parcial\linkedlist.h
+
+1596135933 c:\users\franc\desktop\parcialreculabopandemia\parcial\pais.h
+	"LinkedList.h"
+
+1596078500 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\parser.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"pais.h"
+
+1596135986 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	<time.h>
+	"pais.h"
+	"controller.h"
+
+1596136350 c:\users\franc\desktop\parcialreculabopandemia\parcial\controller.h
+
+1596078839 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\controller.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"pais.h"
+	"Controller.h"
+	"validations.h"
+	"parser.h"
+	<ctype.h>
+	<string.h>
+
+1596068103 c:\users\franc\desktop\parcialreculabopandemia\parcial\validations.h
+
+1596063428 c:\users\franc\desktop\parcialreculabopandemia\parcial\parser.h
+
+1596068096 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\validations.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"validations.h"
+
+1596079425 source:c:\users\franc\desktop\parcialreculabopandemia\parcial\pais.c
+	<stdio.h>
+	<stdlib.h>
+	"pais.h"
+	"validations.h"
+	<string.h>
+	"Controller.h"
+
